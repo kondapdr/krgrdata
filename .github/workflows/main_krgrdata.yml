@@ -28,8 +28,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip freeze > requirements.txt
-
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
@@ -61,4 +60,4 @@ jobs:
         with:
           app-name: 'krgrdata'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7EC8676D1524DF7A7D18713A8BC89FC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_328647FF710643F9AC7F62F07BF224D6 }}
